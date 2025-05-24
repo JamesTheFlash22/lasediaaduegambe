@@ -1,147 +1,138 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedia a 2 Gambe - Culto degli Sgabelli</title>
-  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Outfit', sans-serif;
-      background: linear-gradient(135deg, #310032, #5e0075);
-      color: white;
-      overflow-x: hidden;
-      animation: pulseBackground 5s infinite alternate;
-    }
-
-    @keyframes pulseBackground {
-      0% { background-position: 0 0; }
-      100% { background-position: 100% 100%; }
-    }
-
-    header {
-      background: repeating-linear-gradient(45deg, #ff00cc, #cc00ff 10px);
-      text-align: center;
-      padding: 3rem 1rem;
-      animation: wiggle 2s infinite;
-    }
-
-    @keyframes wiggle {
-      0% { transform: rotate(0deg); }
-      25% { transform: rotate(1deg); }
-      50% { transform: rotate(0deg); }
-      75% { transform: rotate(-1deg); }
-      100% { transform: rotate(0deg); }
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 4rem;
-      font-family: 'Luckiest Guy', cursive;
-      text-shadow: 3px 3px #000;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 2rem;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .hero img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      border: 8px dashed #ff00cc;
-      box-shadow: 0 0 25px #ff00cc;
-      animation: spin 6s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin: 1rem 0;
-      color: #ffccff;
-      font-family: 'Luckiest Guy', cursive;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 1.2rem;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 20px;
-      border: 2px dashed #cc00ff;
-    }
-
-    .meme {
-      background: linear-gradient(90deg, #6f0076, #3f0040);
-      padding: 2rem;
-      text-align: center;
-      animation: neonGlow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes neonGlow {
-      from { box-shadow: 0 0 10px #ff00ff; }
-      to { box-shadow: 0 0 25px #ff00ff; }
-    }
-
-    .meme h3 {
-      font-size: 2rem;
-      color: #ffffff;
-    }
-
-    .meme p {
-      display: inline-block;
-      font-size: 1.3rem;
-      padding: 1rem 2rem;
-      background: #fff1;
-      border: 3px solid #ff00cc;
-      border-radius: 15px;
-      margin-top: 1rem;
-      font-family: 'Luckiest Guy', cursive;
-      color: #ffccff;
-      text-shadow: 2px 2px #000;
-    }
-
-    footer {
-      background: #310032;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sedia a 2 Gambe - Meme Sgabelli</title>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: #3e2a14;
+    color: #d9c7a1;
+    overflow-x: hidden;
+  }
+  header {
+    background: #5a3e16;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 4px solid #7a5c1f;
+    animation: jitter 0.5s infinite alternate;
+  }
+  @keyframes jitter {
+    from { transform: translate(0,0); }
+    to { transform: translate(2px,2px); }
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-family: 'Press Start 2P', monospace;
+    color: #c5a86b;
+  }
+  header p {
+    font-size: 0.9rem;
+    font-family: 'Press Start 2P', monospace;
+    animation: blink 1s steps(2) infinite;
+    margin-top: 0.3rem;
+  }
+  @keyframes blink {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+  }
+  .hero img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px dashed #7a5c1f;
+    animation: spin 6s linear infinite;
+    object-fit: cover;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+  .hero h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+    color: #d6bb7e;
+  }
+  .hero p {
+    margin: 0;
+    font-weight: 700;
+  }
+  .meme-section {
+    padding: 1.5rem 1rem 3rem;
+    background: #4a3514;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    animation: glow 2.5s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from { box-shadow: inset 0 0 10px #7a5c1f; }
+    to { box-shadow: inset 0 0 20px #7a5c1f; }
+  }
+  .quote {
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.07);
+    padding: 1rem 1.2rem;
+    margin: 1rem auto;
+    border-left: 4px solid #c5a86b;
+    position: relative;
+    color: #ecd8a7;
+  }
+  .quote:before {
+    content: '“';
+    font-size: 3rem;
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    color: #c5a86b;
+    font-weight: bold;
+  }
+  .quote:after {
+    content: '” — Sedia a 2 Gambe';
+    display: block;
+    text-align: right;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    color: #b5a05b;
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #5a3e16;
+    border-top: 3px solid #7a5c1f;
+    font-size: 0.85rem;
+    color: #c5a86b;
+    font-family: 'Press Start 2P', monospace;
+  }
+</style>
 </head>
 <body>
   <header>
-    <h1>La Sedia a 2 Gambe</h1>
-    <p>Benvenuto nel culto sacro degli... <strong>Sgabelli</strong></p>
+    <h1>SGABELLI MEME PAGE</h1>
+    <p>REMIX DI CITAZIONI REALI</p>
   </header>
 
   <section class="hero">
-    <img src="sedia.png" alt="La Sedia a 2 Gambe">
-    <h2>Il Meme: SGABELLI</h2>
-    <p>
-      Solo chi ha due gambe può capire. Gli <strong>Sgabelli</strong> sono l'élite, la fanbase che sostiene il peso dell’universo... con meno supporti. Meno gambe, più potenza.
-    </p>
+    <img src="sedia.png" alt="Sgabelli Logo" />
+    <h2>La Sedia a 2 Gambe</h2>
+    <p>Benvenuto nella tana dei veri Sgabelli.</p>
   </section>
 
-  <section class="meme">
-    <h3>Citazioni Leggendarie</h3>
-    <p>"Io non ho bisogno di 4 gambe per reggere i miei meme. Ho gli <strong>Sgabelli</strong>."</p>
-    <p>"Gli Sgabelli non cadono. Si appoggiano allo stile."</p>
-    <p>"La vera forza è l'equilibrio instabile."</p>
+  <section class="meme-section">
+    <div class>Citazioni Leggendarie</h3>
+    <div class>"Io non ho bisogno di 4 gambe per reggere i miei meme. Ho gli <strong>Sgabelli</strong>."</div>
+    <div class>"Gli Sgabelli non cadono. Si appoggiano allo stile."</div>
+    <div class>"La vera forza è l'equilibrio instabile."</div>
   </section>
 
   <footer>
@@ -149,4 +140,3 @@
   </footer>
 </body>
 </html>
-
